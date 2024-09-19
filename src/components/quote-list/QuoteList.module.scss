@@ -1,0 +1,92 @@
+.root {
+  position: relative;
+  padding: 20px;
+
+  .headingText {
+    font-size: 20px;
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .quotes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+
+    .quoteCard {
+      position: relative;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+      .quoteImageContainer {
+        position: relative;
+
+        .quoteImage {
+          width: 100%;
+          height: 150px;
+          object-fit: cover;
+        }
+
+        .quoteText {
+          position: absolute;
+          bottom: 10px;
+          left: 10px;
+          color: white;
+          font-size: 1.2em;
+          background: rgba(0, 0, 0, 0.5);
+          padding: 5px;
+        }
+      }
+
+      .quoteInfo {
+        padding: 10px;
+        text-align: center;
+      }
+    }
+  }
+
+  .loadMoreButton {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+
+    &:disabled {
+      background-color: #cccccc;
+    }
+  }
+
+  .floatingActionButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  @media (max-width: 600px) {
+    .quotes {
+      flex-direction: column;
+    }
+
+    .quoteCard {
+      width: 100%;
+    }
+  }
+
+  @media (min-width: 992px) {
+    .quoteCard {
+      width: 250px;
+    }
+  }
+}

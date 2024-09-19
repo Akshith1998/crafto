@@ -1,0 +1,121 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+  font-family: sans-serif;
+
+  .headingText {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 2rem;
+  }
+
+  .quoteTextWrapper {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 1.5rem;
+
+    .quoteText {
+      display: block;
+      font-size: 1rem;
+      color: #555;
+      margin-bottom: 0.5rem;
+    }
+
+    .quoteTextArea {
+      width: 100%;
+      padding: 0.75rem;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      resize: vertical;
+      transition: border-color 0.3s ease;
+
+      &:focus {
+        border-color: #0073e6;
+        outline: none;
+      }
+    }
+  }
+
+  .uploadWrapper {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 1.5rem;
+
+    .uploadText {
+      display: block;
+      font-size: 1rem;
+      color: #555;
+      margin-bottom: 0.5rem;
+    }
+
+    .uploadInput {
+      display: block;
+      width: 100%;
+      padding: 0.5rem;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      cursor: pointer;
+
+      &::file-selector-button {
+        padding: 0.5rem;
+        border: none;
+        background-color: #0073e6;
+        color: white;
+        font-size: 1rem;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+          background-color: #005bb5;
+        }
+      }
+    }
+  }
+
+  .buttonWrapper {
+    margin-top: 2rem;
+
+    .submit {
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      color: white;
+      background-color: #0073e6;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: #005bb5;
+      }
+
+      &:disabled {
+        background-color: #ccc;
+        cursor: not-allowed;
+      }
+    }
+  }
+
+  .error {
+    margin-top: 1rem;
+    color: #e74c3c;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .success {
+    margin-top: 1rem;
+    color: #2ecc71;
+    font-size: 1rem;
+    text-align: center;
+  }
+}

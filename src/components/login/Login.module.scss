@@ -1,0 +1,92 @@
+.root {
+  background-color: #f2f2f2;
+  width: 100%;
+  height: 100vh;
+  padding: 40px 0;
+  font-family: sans-serif;
+  text-align: center;
+
+  .loginWrapper {
+    background-color: #fff;
+    margin: auto;
+    width: fit-content;
+    padding: 50px 30px 60px;
+
+    .loginTitle {
+      margin-bottom: 20px;
+    }
+
+    .nameWrapper {
+      display: flex;
+      flex-direction: column;
+
+      .nameText {
+        align-self: flex-start;
+        margin-bottom: 5px;
+        color: #00a885;
+      }
+
+      .nameInput {
+        margin-bottom: 20px;
+        height: 44px;
+        width: 100%;
+        padding: 0 10px;
+        font-weight: 400;
+        font-size: 16px;
+        border: 1px solid #d9d9d9;
+      }
+    }
+
+    .otp {
+      display: flex;
+      flex-direction: column;
+
+      .otpText {
+        align-self: flex-start;
+        margin-bottom: 5px;
+        color: #00a885;
+      }
+
+      .otpWrapper {
+        display: flex;
+        column-gap: 10px;
+
+        .otpInput {
+          width: 25px;
+          height: 25px;
+          text-align: center;
+          font-weight: 400;
+          font-size: 16px;
+          border: 1px solid #d9d9d9;
+        }
+      }
+    }
+
+    .errorMessage {
+      margin-top: 20px;
+      font-weight: 400;
+      font-size: 16px;
+      color: red;
+    }
+
+    .submit {
+      background: #00a885;
+      padding: 10px 15px;
+      color: #fff;
+      font-size: 20px;
+      cursor: pointer;
+      border: none;
+      margin-top: 20px;
+    }
+
+    .quotes {
+      background: #00a885;
+      padding: 10px 15px;
+      color: #fff;
+      font-size: 20px;
+      cursor: pointer;
+      border: none;
+      margin-top: 20px;
+    }
+  }
+}
