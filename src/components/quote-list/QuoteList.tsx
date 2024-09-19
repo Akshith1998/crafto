@@ -68,8 +68,8 @@ const QuoteList = () => {
     <div className={styles.root}>
       <h1 className={styles.headingText}>Quotes</h1>
       <div className={styles.quotes}>
-        {quotes.map((quote) => (
-          <div key={quote?.id} className={styles.quoteCard}>
+        {quotes.map((quote, index: number) => (
+          <div key={index} className={styles.quoteCard}>
             <div className={styles.quoteImageContainer}>
               <img
                 src={quote.mediaUrl}
